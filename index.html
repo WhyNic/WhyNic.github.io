@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nicholas Aprilio | Cyber Security Student</title>
+    <meta
+      name="description"
+      content="Portfolio of Nicholas Aprilio, a Cyber Security student focused on Red Team, penetration testing, reverse engineering, and cryptography."
+    >
+    <meta name="author" content="Nicholas Aprilio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://whyn.my.id/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nicholas Aprilio | Cyber Security Student">
+    <meta
+      property="og:description"
+      content="Cyber Security student seeking internship opportunities in Red Team, penetration testing, reverse engineering, and cryptography."
+    >
+    <meta property="og:url" content="https://whyn.my.id/">
+    <meta property="og:site_name" content="Nicholas Aprilio Portfolio">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Nicholas Aprilio | Cyber Security Student">
+    <meta
+      name="twitter:description"
+      content="Cyber Security student focused on Red Team, reverse engineering, and cryptography."
+    >
+
+    <script>
+      (() => {
+        try {
+          const theme = localStorage.getItem("theme") || "dark";
+          document.documentElement.dataset.theme = theme === "light" ? "light" : "dark";
+        } catch {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="WhyN portfolio home">
+          <span class="brand-wordmark">/ WhyN /</span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#writeups">Projects</a></li>
+          <li><a href="#achievements">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+            <span class="theme-toggle-track" aria-hidden="true">
+              <span class="theme-toggle-thumb">
+                <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2.75v2.1M12 19.15v2.1M4.85 4.85l1.48 1.48M17.67 17.67l1.48 1.48M2.75 12h2.1M19.15 12h2.1M4.85 19.15l1.48-1.48M17.67 6.33l1.48-1.48"></path>
+                </svg>
+                <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24">
+                  <path d="M20.2 14.3A7.8 7.8 0 0 1 9.7 3.8a8.6 8.6 0 1 0 10.5 10.5Z"></path>
+                </svg>
+              </span>
+            </span>
+          </button>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="home" aria-labelledby="hero-title">
+        <div class="container hero-layout">
+          <div class="portrait-card">
+            <div class="symbol-orbit" aria-hidden="true">
+              <span class="orbit-symbol"></span>
+              <span class="orbit-symbol"></span>
+              <span class="orbit-symbol"></span>
+              <span class="orbit-symbol"></span>
+              <span class="orbit-symbol"></span>
+            </div>
+            <div class="portrait-circle">
+              <img src="assets/gambar_profile2.png" alt="Portrait of Nicholas Aprilio Chung">
+            </div>
+          </div>
+
+          <div class="hero-content">
+            <h1 class="hero-title" id="hero-title">Nicholas Aprilio Chung</h1>
+            <p class="hero-subtitle" data-typing-text="Cybersecurity Student | Offensive Security">Cybersecurity Student | Offensive Security</p>
+
+            <p class="hero-intro">
+              I’m a Cybersecurity student with a strong interest in offensive security,
+              cryptography, and reverse engineering. I build my practical skills through CTF
+              challenges, security labs, and hands-on projects involving penetration testing, web
+              security, and binary analysis. I enjoy learning how systems work, identifying
+              weaknesses, and continuously improving my technical problem-solving skills.
+            </p>
+
+            <div class="hero-actions" aria-label="Main actions">
+              <a class="button primary" href="#writeups">View Projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Tech Stack</p>
+            <h2 id="skills-title">Technologies I’ve Used</h2>
+          </div>
+
+          <svg class="tech-symbols" aria-hidden="true" focusable="false">
+            <symbol id="tech-python" viewBox="0 0 24 24">
+              <path d="M8.2 3.3h6.1c2 0 3.1 1.1 3.1 3v3.2H10c-2.1 0-3.5 1.3-3.5 3.3v1.1H4.8c-1.2 0-2-.8-2-2V8.2c0-3 2.4-4.9 5.4-4.9Z"></path>
+              <path d="M15.8 20.7H9.7c-2 0-3.1-1.1-3.1-3v-3.2H14c2.1 0 3.5-1.3 3.5-3.3v-1.1h1.7c1.2 0 2 .8 2 2v3.7c0 3-2.4 4.9-5.4 4.9Z"></path>
+              <circle cx="8.4" cy="6.4" r="0.8"></circle>
+              <circle cx="15.6" cy="17.6" r="0.8"></circle>
+            </symbol>
+            <symbol id="tech-linux" viewBox="0 0 24 24">
+              <path d="M7 15.9c.2-4.1 1-8.8 5-8.8s4.8 4.7 5 8.8"></path>
+              <path d="M8.2 11.2 5.6 15c-.5.8-.2 1.9.7 2.2l3.5 1.3"></path>
+              <path d="m15.8 11.2 2.6 3.8c.5.8.2 1.9-.7 2.2l-3.5 1.3"></path>
+              <path d="M9.6 19.5h4.8"></path>
+              <circle cx="10.4" cy="11.2" r="0.5"></circle>
+              <circle cx="13.6" cy="11.2" r="0.5"></circle>
+            </symbol>
+            <symbol id="tech-target" viewBox="0 0 24 24">
+              <path d="M12 3.5a8.5 8.5 0 1 0 8.5 8.5"></path>
+              <path d="M12 7.2a4.8 4.8 0 1 0 4.8 4.8"></path>
+              <path d="M12 10.8a1.2 1.2 0 1 0 1.2 1.2"></path>
+              <path d="m15.8 4.7 3.5-.8-.8 3.5 2.3 2.3-4 .4-2.9-2.9.4-4 1.5 1.5Z"></path>
+            </symbol>
+            <symbol id="tech-wireshark" viewBox="0 0 24 24">
+              <path d="M4 14.8c2.8-5.2 8-8.1 15.5-8.5-1.8 2.5-2.5 5.5-2.1 9.1"></path>
+              <path d="M4 14.8c4.1.5 7.7.1 10.6-1.5"></path>
+              <path d="M6.3 17.8c3.9 1.3 8.6.5 11.8-1.8"></path>
+              <path d="M8.8 12.5h.1"></path>
+            </symbol>
+            <symbol id="tech-terminal" viewBox="0 0 24 24">
+              <path d="M4.5 6h15v12h-15z"></path>
+              <path d="m7.4 10 2.3 2-2.3 2M11.2 14h5.4"></path>
+            </symbol>
+            <symbol id="tech-git" viewBox="0 0 24 24">
+              <path d="M7.5 6.7 12 11.2l4.5-4.5"></path>
+              <path d="M12 11.2v6.3"></path>
+              <circle cx="6.2" cy="5.4" r="2"></circle>
+              <circle cx="17.8" cy="5.4" r="2"></circle>
+              <circle cx="12" cy="18.6" r="2"></circle>
+            </symbol>
+            <symbol id="tech-github" viewBox="0 0 24 24">
+              <path d="M12 2.9a9 9 0 0 0-2.8 17.6c.4.1.6-.2.6-.4v-1.7c-2.3.5-2.8-1-2.8-1-.4-.9-.9-1.2-.9-1.2-.8-.5.1-.5.1-.5.8.1 1.3.9 1.3.9.8 1.3 2.1.9 2.5.7.1-.6.3-1 .5-1.2-1.8-.2-3.8-.9-3.8-4a3.1 3.1 0 0 1 .9-2.2 2.9 2.9 0 0 1 .1-2.2s.7-.2 2.3.8a7.8 7.8 0 0 1 4.2 0c1.6-1 2.3-.8 2.3-.8.4 1 .2 1.8.1 2.2a3.1 3.1 0 0 1 .9 2.2c0 3.1-1.9 3.8-3.8 4 .3.2.6.8.6 1.6v2.4c0 .2.2.5.6.4A9 9 0 0 0 12 2.9Z"></path>
+            </symbol>
+            <symbol id="tech-docker" viewBox="0 0 24 24">
+              <path d="M4.2 12.4h14.5c.8 0 1.5.6 1.5 1.4 0 3.5-3.1 6.2-7.5 6.2H9c-3 0-5.2-1.6-6-4.2"></path>
+              <path d="M6 9.2h2.7v2.7H6zM9.3 9.2H12v2.7H9.3zM12.6 9.2h2.7v2.7h-2.7zM9.3 5.9H12v2.7H9.3zM12.6 5.9h2.7v2.7h-2.7z"></path>
+              <path d="M19.5 11.8c.8-.7 1.6-.8 2.5-.4-.6.9-1.3 1.4-2.2 1.5"></path>
+            </symbol>
+            <symbol id="tech-db" viewBox="0 0 24 24">
+              <ellipse cx="12" cy="6.6" rx="6.8" ry="2.7"></ellipse>
+              <path d="M5.2 6.6v5.2c0 1.5 3 2.7 6.8 2.7s6.8-1.2 6.8-2.7V6.6"></path>
+              <path d="M5.2 11.8V17c0 1.5 3 2.7 6.8 2.7s6.8-1.2 6.8-2.7v-5.2"></path>
+            </symbol>
+            <symbol id="tech-cube" viewBox="0 0 24 24">
+              <path d="M5 7.8 12 4l7 3.8v8.4L12 20l-7-3.8Z"></path>
+              <path d="M5 7.8 12 12l7-4.2M12 12v8"></path>
+              <path d="M8.2 9.7 15.8 14"></path>
+            </symbol>
+            <symbol id="tech-android" viewBox="0 0 24 24">
+              <path d="M8 8.5h8v8H8z"></path>
+              <path d="M9.4 8.5 7.6 5.9M14.6 8.5l1.8-2.6"></path>
+              <path d="M6.2 11.3H4.5M19.5 11.3h-1.7M10 16.5v2M14 16.5v2"></path>
+              <circle cx="10.4" cy="11.5" r="0.5"></circle>
+              <circle cx="13.6" cy="11.5" r="0.5"></circle>
+            </symbol>
+            <symbol id="tech-code" viewBox="0 0 24 24">
+              <path d="m8.5 8-4 4 4 4M15.5 8l4 4-4 4M13.2 6.8l-2.4 10.4"></path>
+            </symbol>
+            <symbol id="tech-windows" viewBox="0 0 24 24">
+              <path d="M4.8 5.8 11 4.9v6.4H4.8zM13 4.6l6.2-.9v7.6H13zM4.8 12.8H11v6.3l-6.2-.9zM13 12.8h6.2v7.5l-6.2-.9z"></path>
+            </symbol>
+            <symbol id="tech-box" viewBox="0 0 24 24">
+              <path d="M5 8.2 12 4l7 4.2v7.6L12 20l-7-4.2Z"></path>
+              <path d="m5 8.2 7 4.1 7-4.1M12 12.3V20"></path>
+            </symbol>
+            <symbol id="tech-editor" viewBox="0 0 24 24">
+              <path d="M5.5 6.5h13v11h-13z"></path>
+              <path d="M8.2 10.2h4.9M8.2 13.7h7.6"></path>
+              <path d="m15.8 8.8 2.2 1.8-2.2 1.8"></path>
+            </symbol>
+          </svg>
+
+          <div class="tech-marquee-stack" aria-label="Technologies Nicholas has used">
+            <div class="tech-marquee tech-marquee-right" style="--marquee-duration: 22s;">
+              <div class="tech-track">
+                <ul class="tech-set" aria-label="Technology row 1">
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-python"></use></svg></span><span>Python</span></li>
+                  <li class="tech-chip"><span class="tech-icon tech-icon-letter" aria-hidden="true">C</span><span>C</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-linux"></use></svg></span><span>Linux</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-target"></use></svg></span><span>Burp Suite</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-wireshark"></use></svg></span><span>Wireshark</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-editor"></use></svg></span><span>Ghidra</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-git"></use></svg></span><span>Git</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-github"></use></svg></span><span>GitHub</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-docker"></use></svg></span><span>Docker</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-db"></use></svg></span><span>MySQL</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tech-marquee tech-marquee-left" style="--marquee-duration: 26s;">
+              <div class="tech-track">
+                <ul class="tech-set" aria-label="Technology row 2">
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-cube"></use></svg></span><span>Laravel</span></li>
+                  <li class="tech-chip"><span class="tech-icon tech-icon-letter" aria-hidden="true">JX</span><span>Jadx</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-android"></use></svg></span><span>Apktool</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-terminal"></use></svg></span><span>WSL</span></li>
+                  <li class="tech-chip"><span class="tech-icon tech-icon-letter" aria-hidden="true">PHP</span><span>PHP</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-db"></use></svg></span><span>SQL</span></li>
+                  <li class="tech-chip"><span class="tech-icon tech-icon-letter" aria-hidden="true">HTML</span><span>HTML</span></li>
+                  <li class="tech-chip"><span class="tech-icon tech-icon-letter" aria-hidden="true">CSS</span><span>CSS</span></li>
+                  <li class="tech-chip"><span class="tech-icon tech-icon-letter" aria-hidden="true">JS</span><span>JavaScript</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-terminal"></use></svg></span><span>GDB</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tech-marquee tech-marquee-right" style="--marquee-duration: 24s;">
+              <div class="tech-track">
+                <ul class="tech-set" aria-label="Technology row 3">
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-terminal"></use></svg></span><span>Pwndbg</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-code"></use></svg></span><span>angr</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-box"></use></svg></span><span>binwalk</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-code"></use></svg></span><span>RsaCtfTool</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-windows"></use></svg></span><span>Windows</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-box"></use></svg></span><span>VirtualBox</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-android"></use></svg></span><span>Android Studio</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-terminal"></use></svg></span><span>ADB</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-editor"></use></svg></span><span>VS Code</span></li>
+                  <li class="tech-chip"><span class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#tech-db"></use></svg></span><span>phpMyAdmin</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="achievements" aria-labelledby="achievements-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Achievements</p>
+            <h2 id="achievements-title">Competition highlights</h2>
+            <p>
+              Selected competitions and recognition from hands-on cybersecurity practice,
+              technical problem solving, and team-based learning.
+            </p>
+          </div>
+
+          <div class="achievement-grid">
+            <article class="achievement-card">
+              <div class="achievement-media">
+                <button
+                  class="achievement-shot achievement-shot-main"
+                  type="button"
+                  data-lightbox-image
+                  data-gallery="rise-the-ranger"
+                  data-index="0"
+                  data-caption="RISE THE RANGER 2 CYBER COMPETITION - Incident Response"
+                  aria-label="View RISE THE RANGER 2 CYBER COMPETITION main image"
+                >
+                  <img
+                    src="assets/satsiber_2.jpg"
+                    alt="Additional RISE THE RANGER 2 CYBER COMPETITION 2026 documentation"
+                    loading="lazy"
+                  >
+                </button>
+                <button
+                  class="achievement-shot achievement-shot-thumb"
+                  type="button"
+                  data-lightbox-image
+                  data-gallery="rise-the-ranger"
+                  data-index="1"
+                  data-caption="RISE THE RANGER 2 CYBER COMPETITION - Incident Response"
+                  aria-label="View additional RISE THE RANGER 2 CYBER COMPETITION image"
+                >
+                  <img
+                    src="assets/satsiber_1.jpeg"
+                    alt="RISE THE RANGER 2 CYBER COMPETITION 2026 achievement documentation"
+                    loading="lazy"
+                  >
+                </button>
+              </div>
+              <div class="achievement-content">
+                <div class="achievement-meta">
+                  <span>2026</span>
+                  <span>Juara Harapan 3</span>
+                  <span>Incident Response</span>
+                </div>
+                <h3>RISE THE RANGER 2 CYBER COMPETITION</h3>
+                <p>
+                  Achieved Juara Harapan 3 in the Incident Response category, gaining hands-on
+                  experience in incident analysis, investigation, and team-based cybersecurity
+                  problem solving.
+                </p>
+              </div>
+            </article>
+
+            <article class="achievement-card">
+              <div class="achievement-media">
+                <button
+                  class="achievement-shot achievement-shot-main"
+                  type="button"
+                  data-lightbox-image
+                  data-gallery="it-fest"
+                  data-index="0"
+                  data-caption="IT Fest - CTF Jeopardy"
+                  aria-label="View IT Fest main image"
+                >
+                  <img
+                    src="assets/itfest_1.JPG"
+                    alt="IT Fest 2026 finalist documentation"
+                    loading="lazy"
+                  >
+                </button>
+                <button
+                  class="achievement-shot achievement-shot-thumb"
+                  type="button"
+                  data-lightbox-image
+                  data-gallery="it-fest"
+                  data-index="1"
+                  data-caption="IT Fest - CTF Jeopardy"
+                  aria-label="View additional IT Fest image"
+                >
+                  <img
+                    src="assets/itfest_2.JPG"
+                    alt="Additional IT Fest 2026 finalist documentation"
+                    loading="lazy"
+                  >
+                </button>
+              </div>
+              <div class="achievement-content">
+                <div class="achievement-meta">
+                  <span>2026</span>
+                  <span>Finalist</span>
+                  <span>CTF Jeopardy</span>
+                </div>
+                <h3>IT Fest</h3>
+                <p>
+                  Reached the finalist stage in the CTF Jeopardy category, solving cybersecurity
+                  challenges across multiple technical domains under competition conditions.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="education" aria-labelledby="education-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Education</p>
+            <h2 id="education-title">Education</h2>
+            <p>Academic background.</p>
+          </div>
+
+          <div class="activity-timeline" aria-label="Education timeline">
+            <article class="activity-item">
+              <div class="activity-node" aria-hidden="true"></div>
+              <div class="activity-entry">
+                <p class="activity-period">2019 – 2024</p>
+                <div class="activity-body">
+                  <div class="activity-logo" aria-hidden="true">
+                    <img src="assets/writeups/covers/SLA.png" alt="" loading="lazy">
+                  </div>
+                  <div class="activity-copy">
+                    <h3>Sekolah Lanjutan Advent (SLA) Tompaso</h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="activities" aria-labelledby="activities-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Organizations / Activities</p>
+            <h2 id="activities-title">Organizations &amp; Activities</h2>
+            <p>Campus and cybersecurity community involvement.</p>
+          </div>
+
+          <div class="activity-timeline" aria-label="Organizations and activities timeline">
+            <article class="activity-item">
+              <div class="activity-node" aria-hidden="true"></div>
+              <div class="activity-entry">
+                <p class="activity-period">May 2026 – Present</p>
+                <div class="activity-body">
+                  <div class="activity-logo" aria-hidden="true">
+                    <img src="assets/writeups/covers/petir.jpg" alt="" loading="lazy">
+                  </div>
+                  <div class="activity-copy">
+                    <h3>PETIR Cyber Security</h3>
+                    <p class="activity-role">Apprentice</p>
+                    <p>
+                      Participating in cybersecurity learning activities and practical skill
+                      development through community-based training and technical exercises.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="activity-item">
+              <div class="activity-node" aria-hidden="true"></div>
+              <div class="activity-entry">
+                <p class="activity-period">20 February 2025 – 6 December 2025</p>
+                <div class="activity-body">
+                  <div class="activity-logo" aria-hidden="true">
+                    <img src="assets/writeups/covers/csc.jpg" alt="" loading="lazy">
+                  </div>
+                  <div class="activity-copy">
+                    <h3>Cyber Security Club BINUS University</h3>
+                    <p class="activity-role">Activist — Human Capital Division</p>
+                    <p>
+                      Contributed as an activist in the Human Capital Division, supporting internal
+                      organizational activities and member development within the cybersecurity
+                      student community.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="writeups" aria-labelledby="writeups-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">CTF Writeups</p>
+            <h2 id="writeups-title">Competition Writeups</h2>
+            <p>
+              A collection of writeups from cybersecurity competitions and CTF events I
+              participated in.
+            </p>
+          </div>
+
+          <div class="writeup-grid">
+            <article class="writeup-card">
+              <div class="writeup-cover" aria-hidden="true">
+                <img src="assets/writeups/covers/petir.jpg" alt="" loading="eager">
+              </div>
+              <div class="writeup-content">
+                <p class="writeup-competition">PETIR CYBER SECURITY</p>
+                <h3>PETIR Cyber Security Qualification 2026</h3>
+                <div class="writeup-badges" aria-label="Writeup metadata">
+                  <span>Qualification 2026</span>
+                </div>
+                <p>
+                  Qualification writeup documenting challenge analysis and solutions across
+                  multiple cybersecurity categories.
+                </p>
+                <a
+                  class="writeup-action"
+                  href="assets/writeups/petir-qualification-2026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Writeup
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="writeup-card">
+              <div class="writeup-cover" aria-hidden="true">
+                <img src="assets/writeups/covers/csc.jpg" alt="" loading="eager">
+              </div>
+              <div class="writeup-content">
+                <p class="writeup-competition">CSC CTF</p>
+                <h3>CSC CTF Contest 2026</h3>
+                <div class="writeup-badges" aria-label="Writeup metadata">
+                  <span>2026</span>
+                </div>
+                <p>
+                  Competition writeup covering challenges across several CTF categories including
+                  web exploitation, cryptography, forensics, reverse engineering, binary
+                  exploitation, and misc.
+                </p>
+                <a
+                  class="writeup-action"
+                  href="assets/writeups/csc-ctf-2026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Writeup
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="writeup-card">
+              <div class="writeup-cover" aria-hidden="true">
+                <img src="assets/writeups/covers/gcw.png" alt="" loading="eager">
+              </div>
+              <div class="writeup-content">
+                <p class="writeup-competition">GUNADARMA CODE WEEK</p>
+                <h3>GCW 2.0 CTF Qualifier</h3>
+                <div class="writeup-badges" aria-label="Writeup metadata">
+                  <span>Qualification 2026</span>
+                </div>
+                <p>
+                  Team qualification writeup covering technical challenges across multiple CTF
+                  categories including forensics, web exploitation, cryptography, pwn, reverse
+                  engineering, and miscellaneous challenges.
+                </p>
+                <a
+                  class="writeup-action"
+                  href="assets/writeups/gcw-qualification-2026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Writeup
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="writeup-card">
+              <div class="writeup-cover" aria-hidden="true">
+                <img src="assets/writeups/covers/rise_the_ranger.jpg" alt="" loading="eager">
+              </div>
+              <div class="writeup-content">
+                <p class="writeup-competition">RISE THE RANGER 2 CYBER COMPETITION</p>
+                <h3>RISE THE RANGER 2 — Qualification</h3>
+                <div class="writeup-badges" aria-label="Writeup metadata">
+                  <span>Qualification</span>
+                </div>
+                <p>
+                  Team writeup documenting the investigation process, technical analysis, evidence
+                  examination, and challenge-solving approach used during the qualification stage.
+                </p>
+                <a
+                  class="writeup-action"
+                  href="assets/writeups/rise-the-ranger-2-qualification.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Writeup
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="writeup-card">
+              <div class="writeup-cover" aria-hidden="true">
+                <img src="assets/writeups/covers/rise_the_ranger.jpg" alt="" loading="eager">
+              </div>
+              <div class="writeup-content">
+                <p class="writeup-competition">RISE THE RANGER 2 CYBER COMPETITION</p>
+                <h3>RISE THE RANGER 2 — Final</h3>
+                <div class="writeup-badges" aria-label="Writeup metadata">
+                  <span>Final</span>
+                  <span>Incident Response</span>
+                </div>
+                <p>
+                  Incident Response final-stage writeup covering investigation, evidence analysis,
+                  attack tracing, and defensive security tasks.
+                </p>
+                <a
+                  class="writeup-action"
+                  href="assets/writeups/rise-the-ranger-2-final.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Writeup
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title">Let's connect.</h2>
+            <p>
+              I am open to internship opportunities, security learning communities, and projects
+              where I can grow through practical technical work.
+            </p>
+          </div>
+
+          <address class="contact-links">
+            <a href="https://github.com/WhyNic" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.19-3.37-1.19-.46-1.16-1.12-1.47-1.12-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.04 1.53 1.04.9 1.52 2.35 1.08 2.92.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6c.85 0 1.7.11 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"
+                ></path>
+              </svg>
+              <span>
+                <span>GitHub</span>
+                <strong>github.com/WhyNic</strong>
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/nicholasaprilio/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.94 8.98H3.75v10.27h3.19V8.98ZM5.34 4.75a1.85 1.85 0 1 0 0 3.7 1.85 1.85 0 0 0 0-3.7Zm13.91 8.62c0-3.09-1.65-4.53-3.85-4.53a3.32 3.32 0 0 0-3 1.65V8.98H9.34v10.27h3.18v-5.08c0-1.34.25-2.64 1.92-2.64 1.64 0 1.66 1.54 1.66 2.72v5h3.15v-5.88Z"
+                ></path>
+              </svg>
+              <span>
+                <span>LinkedIn</span>
+                <strong>linkedin.com/in/nicholasaprilio</strong>
+              </span>
+            </a>
+            <a href="mailto:aprilionich@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M4.75 5.5h14.5A1.75 1.75 0 0 1 21 7.25v9.5a1.75 1.75 0 0 1-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5A1.75 1.75 0 0 1 4.75 5.5Zm.14 1.5 6.44 5.15c.39.31.95.31 1.34 0L19.11 7H4.89Zm14.61 1.48-5.89 4.71a2.57 2.57 0 0 1-3.22 0L4.5 8.48v8.27c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.48Z"
+                ></path>
+              </svg>
+              <span>
+                <span>Email</span>
+                <strong>aprilionich@gmail.com</strong>
+              </span>
+            </a>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year">2026</span> Nicholas Aprilio Chung</p>
+        <a class="back-to-top" href="#home">
+          <svg class="back-to-top-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 19V5M6.5 10.5 12 5l5.5 5.5"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+      </div>
+    </footer>
+
+    <div class="image-lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="Achievement image viewer" hidden>
+      <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="View previous image">Prev</button>
+      <figure class="lightbox-frame">
+        <img class="lightbox-image" src="" alt="">
+        <figcaption class="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="View next image">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
